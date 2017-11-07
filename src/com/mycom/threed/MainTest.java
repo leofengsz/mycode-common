@@ -8,7 +8,7 @@ public class MainTest {
 		t1.start();
 
 
-		//String str = "1111";
+		String str = "1111";
 		
 	}
 	
