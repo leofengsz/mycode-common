@@ -9,6 +9,7 @@ public class MainTest {
 
 
 		String str = "1111";
+		String str2 = "2222";
 		
 	}
 	
