@@ -10,6 +10,7 @@ public class MainTest {
 
 		String str = "1111";
 		String str4 = "4444";
+		String str5 = "5555";
 	}
 	
 
