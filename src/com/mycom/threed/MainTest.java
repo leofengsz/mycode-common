@@ -9,7 +9,7 @@ public class MainTest {
 
 
 		String str = "1111";
-		
+		String str3 = "3333";
 	}
 	
 
