@@ -1,4 +1,4 @@
-package com.mycom.base;
+package com.mycom.base.duotai;
 public class B extends A{
     public String show(B obj){
         return ("B and B");

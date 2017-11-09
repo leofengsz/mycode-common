@@ -1,4 +1,4 @@
-package com.mycom.base;
+package com.mycom.base.duotai;
 public class Test {
     public static void main(String[] args) {
         A a1 = new A();

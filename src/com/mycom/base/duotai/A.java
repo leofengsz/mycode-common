@@ -1,4 +1,4 @@
-package com.mycom.base;
+package com.mycom.base.duotai;
 public class A {
     public String show(D obj) {
         return ("A and D");
