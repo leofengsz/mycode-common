@@ -6,6 +6,8 @@ public class Test1 {
     
     System.out.println("ddd");
     
+    System.out.println("yyyy");
+    
   }
 
 }
