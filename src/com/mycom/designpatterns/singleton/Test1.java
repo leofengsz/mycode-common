@@ -8,6 +8,10 @@ public class Test1 {
     
     System.out.println("yyyy");
     
+    System.out.println("ccc");
+    
+    System.out.println("ttt");
+    
   }
 
 }
