@@ -8,7 +8,6 @@ public class MainTest {
         t1.start();
         
         System.out.println("dddd");
-        System.out.println("ccc");
         System.out.println("yyyy");
 
     }
