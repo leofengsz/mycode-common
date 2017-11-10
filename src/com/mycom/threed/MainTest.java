@@ -6,10 +6,6 @@ public class MainTest {
         
         ThreedTest1 t1 = new ThreedTest1();
         t1.start();
-        
-        System.out.println("dddd");
-        System.out.println("ccc");
-        System.out.println("yyyy");
 
     }
     
