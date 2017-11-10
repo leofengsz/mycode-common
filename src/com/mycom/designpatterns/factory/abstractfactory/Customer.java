@@ -1,14 +1,37 @@
 package com.mycom.designpatterns.factory.abstractfactory;
-public class Customer {    
-    public static void main(String[] args){    
-        //生产宝马320系列配件  
-        FactoryBMW320 factoryBMW320 = new FactoryBMW320();    
-        factoryBMW320.createEngine();  
-        factoryBMW320.createAircondition();  
-            
-        //生产宝马523系列配件    
-        FactoryBMW523 factoryBMW523 = new FactoryBMW523();    
-        factoryBMW320.createEngine();  
-        factoryBMW320.createAircondition();  
-    }    
-}  
+
+/**
+ * 抽象工厂模式-特点：
+ * 抽象工厂模式是所有形态的工厂模式中最为抽象和最具一般性的一种形态。抽象工厂模式是指当有多个抽象角色时，使用的一种工厂模式。
+ * 抽象工厂模式可以向客户端提供一个接口，使客户端在不必指定产品的具体的情况下，创建多个产品族中的产品对象。
+ * 它有多个抽象产品类，每个抽象产品类可以派生出多个具体产品类，一个抽象工厂类，可以派生出多个具体工厂类，
+ * 每个具体工厂类可以创建多个具体产品类的实例。每一个模式都是针对一定问题的解决方案，工厂方法模式针对的是一个产品等级结构；
+ * 而抽象工厂模式针对的是多个产品等级结果。
+ * 
+ * 抽象工厂模式-优点：
+ * 1. 应对“新系列”的需求变化，并易于交换产品系列，使得改变一个应用的具体工厂变得很容易
+ * 2. 保持产品结构的一致性，一个应用一次只能使用同一个系列中的对象
+ * 3. 有助于团队的分工，降低了模块间的耦合性，提高了团队开发效率
+ * 
+ * 抽象工厂模式-缺点：
+ * 1. 难于应付“新对象”的需求变动
+ * 2. 难以支持新种类的产品
+ * 3. 难以扩展抽象工厂以生产新种类的产品
+ * 
+ * 抽象工厂模式-适用范围：
+ * 工厂方法模式解决的范畴是产品等级（AMD处理器，Intel处理器等）；抽象工厂模式解决的范畴是产品族等级（联想PC、惠普PC等）；
+ * 
+ */
+public class Customer {
+  public static void main(String[] args) {
+    // 生产宝马320系列配件
+    AbstractFactory fty = new FactoryBMW320();
+    fty.createEngine();
+    fty.createAircondition();
+
+    // 生产宝马523系列配件
+    fty = new FactoryBMW523();
+    fty.createEngine();
+    fty.createAircondition();
+  }
+}
