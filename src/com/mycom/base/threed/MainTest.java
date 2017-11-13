@@ -1,4 +1,4 @@
-package com.mycom.threed;
+package com.mycom.base.threed;
 
 public class MainTest {
     

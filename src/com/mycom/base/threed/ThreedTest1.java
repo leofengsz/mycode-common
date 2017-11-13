@@ -1,4 +1,4 @@
-package com.mycom.threed;
+package com.mycom.base.threed;
 
 public class ThreedTest1 extends Thread {
 	
