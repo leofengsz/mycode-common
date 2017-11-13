@@ -2,6 +2,7 @@ package com.mycom.designpatterns.factory.factorymethod;
 
 
 /**
+ * 构造型模式
  *
  * 工厂方法模式-特点：
  * 工厂方法是粒度很小的设计模式，因为模式的表现只是一个抽象的方法。提前定义用于创建对象的接口，让子类决定实例化具体的某一个类，

@@ -5,6 +5,8 @@ public class MainTest {
 
 	public static void main(String[] args) {
 		/**
+		 * 责任型模式
+		 * 
 		 * 优点：
 		 * 1. 提供唯一实例，控制对其访问，实现共享概念。
 		 * 2. 节约资源，提高性能（针对频繁创建和销毁的对象）。
