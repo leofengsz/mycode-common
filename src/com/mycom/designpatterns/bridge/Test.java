@@ -1,6 +1,6 @@
 package com.mycom.designpatterns.bridge;
 /**
- * 
+ * 桥接模式(Bridge)
  * 接口型模式
  * 
 1.桥接模式的意图是将抽象与抽象方法的实现相互分离，这样它们就可以独自变化。
