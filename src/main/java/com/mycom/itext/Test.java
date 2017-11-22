@@ -1,7 +1,9 @@
 package com.mycom.itext;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
@@ -14,8 +16,6 @@ import com.itextpdf.text.pdf.PdfName;
 import com.itextpdf.text.pdf.PdfObject;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
-import com.itextpdf.text.pdf.parser.PdfTextExtractor;
-import com.mycom.itext.replacer.PdfReplacer;
 
 public class Test {
 
@@ -28,24 +28,10 @@ public class Test {
   }
   
   public static void reader() throws IOException, DocumentException {
- // 创建一个pdf读入流
-    PdfReader reader = new PdfReader("f:/111.pdf");
-    
-    
-    PdfReplacer textReplacer = new PdfReplacer("I://test.pdf");  
-    textReplacer.replaceText("陈坤", "小白");  
-    textReplacer.replaceText("本科", "社会大学");  
-    textReplacer.replaceText("0755-29493863", "15112345678");  
-    textReplacer.toPdf("I://ticket_out.pdf");  
-    
-    
-    
- // 页数是从1开始的
-    for (int i = 1; i <= reader.getNumberOfPages(); i++) {
-   // 用pdfreader获得当前页字典对象.包含了该页的一些数据.比如该页的坐标轴信息.
-      PdfDictionary p = reader.getPageN(i);
-      System.out.println(PdfTextExtractor.getTextFromPage(reader, i));//读取第i页的文档内容 
-    }
+	  
+	  File file = new File("d://111.pdf");
+	  
+	  
     
   }
   
