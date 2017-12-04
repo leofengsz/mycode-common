@@ -11,7 +11,14 @@ public class TemplateLabel {
 	private Float w;
 	private Float h;
 	
-	private int pageIndex;
+	private int pageIndex=1;
+	private String fontName="STSong-Light";
+	private String enCoding="UniGB-UCS2-H";
+	private int fontSize=8;
+	// 字体颜色：1=黑色，2=红色
+	private int baseColor=1;
+	
+	
 	
 	public TemplateLabel(String labelName){
 		this.labelName = labelName;
@@ -58,5 +65,37 @@ public class TemplateLabel {
 
   public void setPageIndex(int pageIndex) {
     this.pageIndex = pageIndex;
+  }
+
+  public String getFontName() {
+    return fontName;
+  }
+
+  public void setFontName(String fontName) {
+    this.fontName = fontName;
+  }
+
+  public String getEnCoding() {
+    return enCoding;
+  }
+
+  public void setEnCoding(String enCoding) {
+    this.enCoding = enCoding;
+  }
+
+  public int getFontSize() {
+    return fontSize;
+  }
+
+  public void setFontSize(int fontSize) {
+    this.fontSize = fontSize;
+  }
+
+  public int getBaseColor() {
+    return baseColor;
+  }
+
+  public void setBaseColor(int baseColor) {
+    this.baseColor = baseColor;
   }
 }

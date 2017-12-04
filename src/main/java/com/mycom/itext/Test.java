@@ -3,7 +3,9 @@ package com.mycom.itext;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
+import java.util.HashMap;
+import java.util.Map;
+import net.sf.json.util.JSONUtils;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
@@ -16,15 +18,22 @@ import com.itextpdf.text.pdf.PdfName;
 import com.itextpdf.text.pdf.PdfObject;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
+import com.mycom.itext.pdf.TemplateLabel;
 
 public class Test {
 
   public static void main(String[] args){
-     try {
-       reader();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
+    Map<Integer, String> map = new HashMap<Integer, String>();  
+    map.put(220180, null);  
+    map.put(220181, "马先生");  
+    System.out.println("get()方法的返回结果：");  
+    System.out.print("------ " + map.get(220180));  
+    System.out.print("    " + map.get(220181));  
+    System.out.println("    " + map.get(220182));  
+    System.out.println("containsKey()方法的返回结果：");  
+    System.out.print("------ " + map.containsKey(220180));  
+    System.out.print("    " + map.containsKey(220181));  
+    System.out.println("    " + map.containsKey(220182));
   }
   
   public static void reader() throws IOException, DocumentException {

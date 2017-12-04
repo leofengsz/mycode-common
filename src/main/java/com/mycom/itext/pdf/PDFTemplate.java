@@ -1,13 +1,13 @@
 package com.mycom.itext.pdf;
 
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 
 public class PDFTemplate {
   
   private File templateFile;
-  private int[] updPages;
-  private Map<String,TemplateLabel> labelMap;
+  private Map<String,List<TemplateLabel>> labels;
   
   public File getTemplateFile() {
     return templateFile;
@@ -15,17 +15,11 @@ public class PDFTemplate {
   public void setTemplateFile(File templateFile) {
     this.templateFile = templateFile;
   }
-  public int[] getUpdPages() {
-    return updPages;
+  public Map<String,List<TemplateLabel>> getLabels() {
+    return labels;
   }
-  public void setUpdPages(int[] updPages) {
-    this.updPages = updPages;
-  }
-  public Map<String,TemplateLabel> getLabelMap() {
-    return labelMap;
-  }
-  public void setLabelMap(Map<String,TemplateLabel> labelMap) {
-    this.labelMap = labelMap;
+  public void setLabels(Map<String,List<TemplateLabel>> labels) {
+    this.labels = labels;
   }
 
 }
