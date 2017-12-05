@@ -31,6 +31,8 @@ public class MainTest {
     Map<String,String> map = new HashMap<String,String>();
     map.put("aaa", "bbb");
     System.out.println((String)map.get("bbb"));
+    
+    System.out.println("分支合并测试-dev_v1.0分支");
   }
 
 }
